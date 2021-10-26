@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+    <head>  
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="./css/index.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+        <script src="./JS/jquery-2.0.2.min.js"></script>
+        <script src="./JS/jquery-3.3.1.min.js"></script>
+        <title>Web Server S7-1200</title>
+    </head>
+    <body>
+        <div class="header">
+            <div class="row">
+                <div class="col-3">
+                    <img src="./image/7-11 Nhan dien thuong hieu.jpg" alt="">
+                </div>
+                <div class="col-9 banner">
+                    <h4>TRƯỜNG ĐẠI HỌC GIAO THÔNG VẬN TẢI TP.HCM</h4>
+                    <h3>LUẬN VĂN TỐT NGHIỆP</h3>
+                    <h2>ĐIỀU KHIỂN, GIÁM SÁT MÁY LÀM BÁNH IN</h2>
+                    <p>GVHD: TS TRẦN QUANG VINH</p>
+                </div>
+            </div>
+            <div class="row title">
+                <div class="col-4">
+                    <a href="./home.html">HOME</a>
+                </div>
+                <div class="col-4">
+                    <a href="./Index.html">CONTROL</a>
+                </div>
+                <div class="col-4">
+                    <a href="./help.html">HELP</a>
+                </div>
+            </div>
+            <div class="control">
+               
+                <div>
+                    <p class="control1"> Khởi động hệ thống : <button id= "Btn_Start">ON</button> &ensp; <button id= "Btn_Stop">OFF</button></p>
+                   
+                    
+                  
+                </div>
+    
+            </div>
+            <div class="row">
+                <div class="col-3">
+                    <div class="my__table">
+                        <h5>Giam sát</h5>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <p>Xilanh</p>
+                                    </div>
+                                </div>
+                                <div class="table">
+                                    <span>
+                                        <p id="a">Chạy</p>
+                                        <p id="b">Dừng</p>
+                                    </span>
+                                    <div class="tablee">
+                                        <span>
+                                            <p> XL1:
+                                            </p>
+                                            <div id="X1" class="circle"></div>
+                                            <div id="X11" class="circle"></div>
+                                            <p></p>
+                                        </span>
+                                        <span>
+                                            <p> XL2:
+                                            </p>
+                                            <div id="X2" class="circle"></div>
+                                            <div id="X21" class="circle"></div>
+                                            <p></p>
+                                        </span>
+                                        <span>
+                                            <p> XL3:
+                                            </p>
+                                            <div id="X3" class="circle"></div>
+                                            <div id="X31" class="circle"></div>
+                                            <p></p>
+                                        </span>
+                                        <span>
+                                            <p> XL4:
+                                            </p>
+                                            <div id="X4" class="circle"></div>
+                                            <div id="X41" class="circle"></div>
+                                            <p></p>
+                                        </span>
+                                        <span>
+                                            <p> XL5:
+                                            </p>
+                                            <div id="X5" class="circle"></div>
+                                            <div id="X51" class="circle"></div>
+                                            <p></p>
+                                        </span>
+                                        <span>
+                                            <p> XL6:
+                                            </p>
+                                            <div id="X6" class="circle"></div>
+                                            <div id="X61" class="circle"></div>
+                                            <p></p>
+                                        </span>
+                                        <span>
+                                            <p> XL7:
+                                            </p>
+                                            <div id="X7" class="circle"></div>
+                                            <div id="X71" class="circle"></div>
+                                            <p></p>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <p>Băng tải</p>
+                                    </div>
+                                </div>
+                                <div class="table">
+                                    <span>
+                                        <p id="a">Chạy</p>
+                                        <p id="b">Dừng</p>
+                                    </span>
+                                    <div class="tablee">
+                                        <span>
+                                            <p>BT1:
+                                            </p>
+                                            <div id="B1" class="circle"></div>
+                                            <div id="B11" class="circle"></div>
+                                            <p></p>
+                                        </span>
+                                        <span>
+                                            <p>BT2:
+                                            </p>
+                                            <div id="B2" class="circle"></div>
+                                            <div id="B21" class="circle"></div>
+                                            <p></p>
+                                        </span>
+                                        <span>
+                                            <p>BT3:
+                                            </p>
+                                            <div id="B3" class="circle"></div>
+                                            <div id="B31" class="circle"></div>
+                                            <p></p>
+                                        </span>
+                                    
+                                        <span>
+                                            <div class="abcd"></div>
+    
+                                        </span></div>
+                                </div>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="my__table2">
+                        <h5>Điều khiển &amp; giám sát servo</h5>
+                        <div class="table__content">
+                            <p>Servo ON : <span id = "SEVO" class="circle"></span></p>
+                            <p id="tocdo">Tốc độ chạy : 0 </p>
+                            <p id="vitri">Vị trí hiện tại : 0</p>
+                            <p>Set tốc độ <input type="text" id="settocdo"> <button type="submit" id="ok1">Ok</button></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-5">
+                    <img src="./image/anh10.PNG" alt="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3">
+                    <div class="my__table3">
+                        <h5>Thời gian HĐ &amp; Số lượng bánh</h5>
+                        <div class="table__content2">
+    
+                            <p id="soluong">Số bánh máy sản xuất : 0</p>
+                            <p id="thoigian">Thời gian máy làm việc : 0</p>
+    
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="my__table4">
+                        <h5>Điều khiển lò nhiệt</h5>
+                        <div class="table__content1">         
+                            <p id = "nhiet"> Nhiệt độ hiện tại : 0 </p>
+                            <p>Quạt :   Chạy <span id = "qq1" class="circle"></span>   Dừng <span id = "qq2" class="circle"></span></p>
+                            <p>Nhập giá trị nhiệt độ : <input type="text" id="GTnhiet"> <button type="submit" id="ok2">Ok</button></p>
+                       
+                            <button id="bieudo"><a href="./scrollinggraph.html">Biểu đồ</a></button> </div>
+                      
+                    </div>
+                </div>
+                <div class="col-5">
+                    <div class="my__table3">
+                        <h5>Motor khuấy &amp; cảnh báo hết bột</h5>
+                       <div class="table__content1">
+                           
+                            <p>Motor :   Chạy <span id="mt1" class="circle"></span>   Dừng <span id="mt2" class="circle"></span></p>
+                            <p>Cảnh báo bột hết : </p><div id="bot"></div>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>         
+    
+    
+        </div>
+        
+    </body>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $.ajaxSetup({ cache: false});
+            setInterval(function() {
+                $.getJSON("IO.html", function(result){
+                    $('#Start').text("Start: " + result["start"]);
+                    $('#Stop').text("Stop: " + result["stop"]);
+                    $('#nhiet').text("Nhiệt độ hiện tại : " + result["data2"] + "độ C");
+                    $('#vitri').text("Vị trí hiện tại : " + result["data1"]);
+                    $('#tocdo').text("Tốc độ chạy : " + result["data3"]);   
+                    $('#soluong').text("Số lượng bánh : " + result["data16"] +"Cái"); 
+                    $('#thoigian').text("Thời gian máy hoạt động : " + result["data17"]+"Phút");                  
+                    if (result["data18"] == 1){
+                        document.getElementById('SEVO').style.background = '#00ff00';
+                    }
+                    else{
+                        document.getElementById('SEVO').style.background = '#ff0000';
+                    }    
+                    if (result["data19"] == 1){
+                        document.getElementById('Btn_Start').style.background = '#00ff00';
+                    }
+                    else{
+                        document.getElementById('Btn_Start').style.background = '#cabfbff0';
+                    }   
+                    if (result["data20"] == 1){
+                        document.getElementById('Btn_Stop').style.background = '#ff0000';
+                    }
+                    else{
+                        document.getElementById('Btn_Stop').style.background = '#cabfbff0';
+                    }   
+                    if (result["data4"] == 1){
+                        document.getElementById('X1').style.background = '#00ff00';
+                        document.getElementById('X11').style.background = '#ffffff';
+                    }
+                    else{
+                        document.getElementById('X1').style.background = '#ffffff';
+                        document.getElementById('X11').style.background = '#ff0000';
+                    }
+                    if (result["data5"] == 1){
+                        document.getElementById('X2').style.background = '#00ff00';
+                        document.getElementById('X21').style.background = '#ffffff';
+                    }
+                    else{
+                        document.getElementById('X2').style.background = '#ffffff';
+                        document.getElementById('X21').style.background = '#ff0000';
+                    }
+                    if (result["data6"] == 1){
+                        document.getElementById('X3').style.background = '#00ff00';
+                        document.getElementById('X31').style.background = '#ffffff';
+                    }
+                    else{
+                        document.getElementById('X3').style.background = '#ffffff';
+                        document.getElementById('X31').style.background = '#ff0000';
+                    }
+                    if (result["data7"] == 1){
+                        document.getElementById('X4').style.background = '#00ff00';
+                        document.getElementById('X41').style.background = '#ffffff';
+                    }
+                    else{
+                        document.getElementById('X4').style.background = '#ffffff';
+                        document.getElementById('X41').style.background = '#ff0000';
+                    }
+                    if (result["data8"] == 1){
+                        document.getElementById('X5').style.background = '#00ff00';
+                        document.getElementById('X51').style.background = '#ffffff';
+                    }
+                    else{
+                        document.getElementById('X5').style.background = '#ffffff';
+                        document.getElementById('X51').style.background = '#ff0000';
+                    }
+                    if (result["data9"] == 1){
+                        document.getElementById('X6').style.background = '#00ff00';
+                        document.getElementById('X61').style.background = '#ffffff';
+                    }
+                    else{
+                        document.getElementById('X6').style.background = '#ffffff';
+                        document.getElementById('X61').style.background = '#ff0000';
+                    }
+                    if (result["data10"] == 1){
+                        document.getElementById('X7').style.background = '#00ff00';
+                        document.getElementById('X71').style.background = '#ffffff';
+                    }
+                    else{
+                        document.getElementById('X7').style.background = '#ffffff';
+                        document.getElementById('X71').style.background = '#ff0000';
+                    }
+                    if (result["data12"] == 1){
+                        document.getElementById('B2').style.background = '#00ff00';
+                        document.getElementById('B21').style.background = '#ffffff';
+                        document.getElementById('B1').style.background = '#00ff00';
+                        document.getElementById('B11').style.background = '#ffffff';
+                    }
+                    else{
+                        document.getElementById('B2').style.background = '#ffffff';
+                        document.getElementById('B21').style.background = '#ff0000';
+                        document.getElementById('B1').style.background = '#ffffff';
+                        document.getElementById('B11').style.background = '#ff0000';
+                    }
+                    if (result["data13"] == 1){
+                        document.getElementById('B3').style.background = '#00ff00';
+                        document.getElementById('B31').style.background = '#ffffff';
+                    }
+                    else{
+                        document.getElementById('B3').style.background = '#ffffff';
+                        document.getElementById('B31').style.background = '#ff0000';
+                    }
+                   
+                    if (result["data11"] == 1){
+                        document.getElementById('mt1').style.background = '#00ff00';
+                        document.getElementById('mt2').style.background = '#ffffff';
+                    }
+                    else{
+                        document.getElementById('mt1').style.background = '#ffffff';
+                        document.getElementById('mt2').style.background = '#ff0000';
+                    }
+                    });
+                // $.getJSON("DI.html", function(result){
+                    
+
+                // });
+            },1000);
+    });
+    
+    $("#ok2").click(function(){
+        var val = document.getElementById('GTnhiet').value;
+        ulr = 'IO.html';
+        name = '"Data_block".SET_POINT';
+        sdata = escape(name)+'='+val;
+        $.post(ulr, sdata, function(result2){});
+        //alert("Đã Gửi");
+    });
+    $("#Btn_Start").click(function(){
+            ulr = 'IO.html';
+            name = '"Data_block".START_WED';
+            sdata = escape(name)+'='+1;
+            $.post(ulr, sdata, function(result2){});
+       
+    });
+    $("#Btn_Stop").click(function(){
+            ulr = 'IO.html';
+            name = '"Data_block".STOP_WED';
+            sdata = escape(name)+'='+1;
+            $.post(ulr, sdata, function(result2){});
+       
+    });
+    $("#ok1").click(function(){
+        var val = document.getElementById('settocdo').value;
+        ulr = 'IO.html';
+        name = '"Data_block".TOC_DO_SERVO';
+        sdata = escape(name)+'='+val;
+        $.post(ulr, sdata, function(result2){});
+        //alert("Đã Gửi");
+    });
+    </script>
+    <!-- <script type="text/javascript" >
+        $(document).ready(function(){        
+            $.ajaxSetup({cache:false});
+            setInterval(function(){
+                $.getJSON("DI.html",function(result){
+                    XL1 = result["data4"];
+                    XL2 = result["data5"];
+                    XL3 = result["data6"];
+                    XL4 = result["data7"];
+                    XL5 = result["data8"];
+                    XL6 = result["data9"];
+                    XL7 = result["data10"];
+                    BT1 = result["data12"];
+                    BT2 = result["data13"];
+                    BT3 = result["data13"];
+                    BT4 = result["data14"];
+                    SERVO = result["data18"];
+                    MT = result["data11"];
+               
+                    
+                   
+                })
+            },1500);
+        });
+    </script> -->
+</html>

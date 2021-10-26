@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>TTTN</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/index.css">
+
+</head>
+
+<body>
+    <div class="header">
+        <div class="row">
+            <div class="col-3">
+                <img src="./image/7-11 Nhan dien thuong hieu.jpg" alt="">
+            </div>
+            <div class="col-9 banner">
+                <h4>TRƯỜNG ĐẠI HỌC GIAO THÔNG VẬN TẢI TP.HCM</h4>
+                <h3>LUẬN VĂN TỐT NGHIỆP</h3>
+                <h2>ĐIỀU KHIỂN, GIÁM SÁT MÁY LÀM BÁNH IN</h2>
+                <p>GVHD: TS TRẦN QUANG VINH</p>
+                <div style="float: right;"> <button>Logout</button></div>
+                
+            </div>
+        </div>
+        <div class="row title">
+            <div class="col-4">
+                <a href="./home.html">HOME</a>
+            </div>
+            <div class="col-4">
+                <a href="./Index.html">CONTROL</a>
+            </div>
+            <div class="col-4">
+                <a href="./help.html">HELP</a>
+            </div>
+        </div>
+    </div>
+    <div class="intro">
+        <h6>TRƯỜNG ĐẠI HỌC GIAO THÔNG VẬN TẢI TP.HCM</h6>
+        <h6>KHOA : ĐIỆN-ĐIỆN TỬ VIỄN THÔNG</h6>
+        <h2>LUẬN VĂN TỐT NGHIỆP</h2>
+        <h4>ĐIỀU KHIỂN, GIÁM SÁT MÁY LÀM BÁNH IN QUA WEBSERVER</h4>
+        <p class="intro0">GVHD : TS. TRẦN QUANG VINH </p>
+        <p>SVTH : TRẦN VĂN HẢI <span class="intro__img"><img
+                    src="./image/1.jpg" alt=""></span></p>
+        <p class="intro1">: PHẠM VĂN NAM <span class="intro__img"><img
+                    src="./image/4.jpg" alt=""></span></p>
+        <p class="intro2">: NGUYỄN HOÀNG PHI <span class="intro__img"><img
+                    src="./image/2.jpg" alt=""></span></p>
+    </div>
+    <div class="footer">
+        <p>ĐẠI HỌC GIAO THÔNG VẬN TẢI HỒ CHÍ MINH - LUẬN VĂN TỐT NGHIỆP (ngày <span id="hvn"></span>)</p>
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+        <script>
+            var today = new Date();
+            var date = today.getDate()+'-'+(today.getMonth()+1)+'-'+today.getFullYear();
+            var time = today.getHours() + ":" + today.getMinutes() ;
+            var dateTime = date+' ; '+time + ' Giờ';
+            // var dateTime = date;
+         
+            document.getElementById("hvn").innerHTML = dateTime;
+         </script>
+</body>
+
+</html>
